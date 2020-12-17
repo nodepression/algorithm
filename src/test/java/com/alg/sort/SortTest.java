@@ -1,9 +1,7 @@
-package com.alg.zq.sort;
+package com.alg.sort;
 
-import com.alg.zq.util.SortHelper;
+import com.alg.util.SortHelper;
 import org.junit.jupiter.api.*;
-
-import java.util.Arrays;
 
 
 class SortTest {

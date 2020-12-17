@@ -1,6 +1,6 @@
-package com.alg.zq;
+package com.alg;
 
-import com.alg.zq.sort.Sort;
+import com.alg.sort.Sort;
 
 import java.util.Arrays;
 

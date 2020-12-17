@@ -1,4 +1,4 @@
-package com.alg.zq.sort;
+package com.alg.sort;
 
 public class Sort {
     /**

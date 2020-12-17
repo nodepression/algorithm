@@ -1,6 +1,6 @@
-package com.alg.zq.util;
+package com.alg.util;
 
-import com.alg.zq.sort.Sort;
+import com.alg.sort.Sort;
 
 import java.lang.reflect.Method;
 import java.util.Random;
