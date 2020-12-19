@@ -25,7 +25,7 @@ public class SortHelper {
     }
 
     /**
-     * 验证算法是否有序
+     * 验证算法是否有序,从小打到
      *
      * @param arr 要验证的数组
      * @return 是否有序
@@ -60,7 +60,7 @@ public class SortHelper {
             //验证是否有序
             assert isSorted(arr);
 
-            System.out.println(sortClass.getSimpleName() + " : " + (endTime - startTime) + "ms");
+            System.out.println(sortMethodName + " : " + (endTime - startTime) + "ms");
         } catch (Exception ex) {
             ex.printStackTrace();
         }

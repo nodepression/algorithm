@@ -13,9 +13,16 @@ class SortTest {
     }
 
     @Test
-    public void selectionSort() {
-        int n = 100000;
+    public void testSelectionSort() {
+        int n = 10000;
         int[] arr = SortHelper.generateRandomArray(n, 0, n);
         SortHelper.testSort("selectionSort", arr);
+    }
+
+    @Test
+    public void testBubbleSort() {
+        int n = 10000;
+        int[] arr = SortHelper.generateRandomArray(n, 0, n);
+        SortHelper.testSort("bubbleSort", arr);
     }
 }
