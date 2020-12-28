@@ -42,8 +42,39 @@ public class Sort {
                 }
             }
         }
-
     }
+
+    /**
+     * 快速排序 O(nlogn) 平均情况下需要迭代 logn层,每层迭代共需要比较n次。
+     * 每层迭代共需要比较n次,交换若干次
+     */
+    public void quickSort(int[] nums) {
+        quickSortHelper(nums, 0, nums.length - 1);
+    }
+
+    public void quickSortHelper(int[] nums, final int start, final int end) {
+        if (start >= end) {
+            return;
+        }
+        int left = start;
+        int right = end;
+        int pivot = nums[start];
+        while (left < right) {
+            while (nums[right] >= pivot && right > left) {
+                right--;
+            }
+            while (nums[left] <= pivot && right > left) {
+                left++;
+            }
+            if (left < right) {
+                swapArrayItem(nums, left, right);
+            }
+        }
+        swapArrayItem(nums, start, left);
+        quickSortHelper(nums, start, left);
+        quickSortHelper(nums, right + 1, end);
+    }
+
 
     public void swapArrayItem(int[] arr, int i, int j) {
         int temp = arr[i];
